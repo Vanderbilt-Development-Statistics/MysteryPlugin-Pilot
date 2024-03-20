@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# IntelliJ / JetBrains
+.idea/
+*.iml
+
+# Build output
+out/
+build/
+
+# Plugin ZIPs (hosted in GitHub Releases, not in repo)
+dev-stats-plugin-*.zip
