@@ -26,15 +26,15 @@ aws configure
 ```
 This will prompt you to enter:
 
-- AWS Access Key ID: 
-- AWS Secret Access Key: 
+- AWS Access Key ID: **Attached in the text file sent to you (Do not put double or single quotes)**
+- AWS Secret Access Key: **Attached in the text file sent to you (Do not put double or single quotes)**
 - Default region name: us-east-1
 - Default output format: json
 
 ### Step 5.5 (**Optional Windows Users**): Configure the HOME Variable
 - If you are a Windows user, you may need to set the Home Variable, so that the AWS connection in the application knows where your IAM user is.
 
-### Step 6: Unzip dev-stats-api
+### Step 6: Unzip dev-stats-api **Attached in the email sent to you**
 
 ### Step 7: Ensure Docker Daemon is Running (Docker Desktop is Open) and Open a Terminal
 - In the terminal, cd to the dev-stats-api directory and run the following commands in sequence.
