@@ -75,4 +75,7 @@ docker compose up
 ### Step 14: Start screen recording and submit the video
 - Please upload your screen capture video via: [Google Form](https://forms.gle/oV5oh5cZcFxN5PKy8).
 
+### Step 15: Clear AWS user and delete email that was sent to you with the credentials.
+- Go to your terminal again and type in ```aws configure``` and then put in random symbols for the regular and secret access keys to ensure nothing gets leaked.
+
 Note: these steps are designed to guide you through the setup process smoothly. Adjustments might be needed based on your specific requirements or changes in software versions.
