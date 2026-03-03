@@ -7,8 +7,8 @@
         <idea-version since-build="233" until-build="242.*"/>
         <name>Development Statistics</name>
         <description><![CDATA[
-            Provided by Vanderbilt University. Tracks development statistics
-            for academic integrity monitoring in CS courses.
+            Provided by Vanderbilt University. Dev-Stats is a simple tool
+            designed to track your development statistics.
         ]]></description>
     </plugin>
 </plugins>
