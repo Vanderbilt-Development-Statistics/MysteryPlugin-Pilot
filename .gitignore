@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# IntelliJ / JetBrains
+.idea/
+*.iml
+
+# Build output
+out/
+build/
