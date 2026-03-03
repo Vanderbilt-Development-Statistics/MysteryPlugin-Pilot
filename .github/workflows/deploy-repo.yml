@@ -1,0 +1,52 @@
+# Deploys the custom plugin repository descriptor (updatePlugins.xml) to GitHub Pages.
+# This allows IntelliJ users to add the repository URL in their IDE settings
+# and install/update the plugin without downloading ZIPs manually.
+#
+# Repository URL for students:
+#   https://vanderbilt-development-statistics.github.io/MysteryPlugin-Pilot/updatePlugins.xml
+
+name: Deploy Plugin Repository
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'updatePlugins.xml'
+
+  # Allow manual trigger
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Deploy to GitHub Pages
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Fetch Sources
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Prepare Pages Content
+        run: |
+          mkdir -p _site
+          cp updatePlugins.xml _site/
+
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

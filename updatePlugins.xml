@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugins>
+    <plugin
+        id="devstatsplugin"
+        url="https://github.com/Vanderbilt-Development-Statistics/MysteryPlugin-Pilot/releases/download/v1.0.0/dev-stats-plugin-1.0.0.zip"
+        version="1.0.0">
+        <idea-version since-build="233" until-build="242.*"/>
+        <name>Development Statistics</name>
+        <description><![CDATA[
+            Provided by Vanderbilt University. Tracks development statistics
+            for academic integrity monitoring in CS courses.
+        ]]></description>
+    </plugin>
+</plugins>
