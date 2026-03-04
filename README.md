@@ -131,7 +131,7 @@ No. Once installed, the plugin will automatically update when new versions are r
 
 ## Need Help?
 
-If you run into any issues not covered above, please reach out to the research team at [dev.stats@vanderbilt.edu](mailto:dev.stats@vanderbilt.edu).
+If you run into any issues not covered above, please reach out to the research team at [cameron.j.scarpati@vanderbilt.edu](mailto:cameron.j.scarpati@vanderbilt.edu).
 
 ---
 
