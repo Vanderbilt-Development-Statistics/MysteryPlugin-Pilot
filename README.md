@@ -2,7 +2,7 @@
 
 **Vanderbilt University · Computer Science Department**
 
-Welcome! You've been selected to participate in a pilot study for **Development Statistics (Dev-Stats)**, a lightweight IntelliJ IDEA plugin that tracks your coding activity as you work through a programming assignment. The data collected helps researchers at Vanderbilt understand how students approach development tasks.
+Welcome! You've been invited to participate in a pilot study for **Development Statistics (Dev-Stats)**, a lightweight IntelliJ IDEA plugin that tracks users' coding activity as they work through a programming assignment. The data collected helps researchers at Vanderbilt understand how students approach development tasks.
 
 This guide walks you through everything you need to get set up. It should take about **5 minutes**.
 
@@ -18,14 +18,13 @@ This guide walks you through everything you need to get set up. It should take a
 
 ## Step 1: Download IntelliJ IDEA
 
-1. Go to the [IntelliJ IDEA download page](https://www.jetbrains.com/idea/download/other.html).
-2. Scroll to the **Community Edition** section (free).
+1. Go to the [IntelliJ IDEA download page](https://www.jetbrains.com/idea/download/).
+2. Download the installer for your operating system.
 
    ![IntelliJ Download](./Images/IntelliJDownload.png)
 
-3. Click the download link for your operating system.
-4. Run the installer and follow the on-screen instructions.
-5. Launch IntelliJ IDEA. You should see the welcome screen:
+3. Run the installer and follow the on-screen instructions.
+4. Launch IntelliJ IDEA. You should see the welcome screen:
 
    ![Welcome Page](./Images/WelcomePage.png)
 
@@ -37,10 +36,16 @@ This guide walks you through everything you need to get set up. It should take a
    - *Already have a project open?* Go to **File > Settings** (Windows/Linux) or **IntelliJ IDEA > Settings** (macOS), then select **Plugins**.
 2. Click the **gear icon** near the top of the Plugins window (next to "Marketplace" and "Installed").
 3. Select **Manage Plugin Repositories...** from the dropdown.
+
+   ![Manage Plugin Repositories](./Images/PluginRepositories.png)
+
 4. Click **+** and paste the following URL:
    ```
    https://vanderbilt-development-statistics.github.io/MysteryPlugin-Pilot/updatePlugins.xml
    ```
+
+   ![Custom Plugin Repositories](./Images/Repository.png)
+
 5. Click **OK** to save.
 
 ---
@@ -51,7 +56,7 @@ This guide walks you through everything you need to get set up. It should take a
 2. Search for **"Development Statistics"**.
 3. Click **Install**.
 
-   ![Plugin Installation](./Images/PluginInstallation.png)
+   ![Plugin Installation](./Images/PluginInstalled.png)
 
 4. If prompted, restart the IDE to activate the plugin.
 
@@ -75,7 +80,8 @@ This guide walks you through everything you need to get set up. It should take a
    ![Repo Download](./Images/RepoDownload.png)
 
 2. Unzip the downloaded file.
-3. Open the project in IntelliJ IDEA:
+3. Inside the unzipped folder, navigate to the **Project** directory and unzip **project4.zip**.
+4. Open the project in IntelliJ IDEA:
    - **From the welcome screen:** Click **Open** and navigate to the unzipped project folder.
    - **From an open project:** Go to **File > Open** and select the project folder.
 
@@ -116,10 +122,10 @@ When you've finished the assignment, stop your screen recording and upload the v
 ## FAQ
 
 **Q: Which version of IntelliJ should I use?**
-Any version from **2023.3** or newer will work, including the latest release. The free Community Edition is all you need.
+Any version from **2023.3** or newer will work, including the latest release.
 
 **Q: Does the plugin work with other JetBrains IDEs?**
-The plugin is built for IntelliJ IDEA. It may work in other JetBrains IDEs, but IntelliJ IDEA Community Edition is recommended.
+The plugin is built for IntelliJ IDEA. It may work in other JetBrains IDEs, but IntelliJ IDEA is recommended.
 
 **Q: Will the plugin slow down my IDE?**
 No. The plugin is lightweight and runs in the background without affecting IDE performance.
