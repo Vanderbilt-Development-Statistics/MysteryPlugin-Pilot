@@ -56,7 +56,7 @@ This guide walks you through everything you need to get set up. It should take a
 2. Search for **"Development Statistics"**.
 3. Click **Install**.
 
-   ![Plugin Installation](./Images/PluginInstalled.png)
+   ![Plugin Installation](./Images/InstallPlugin.png)
 
 4. If prompted, restart the IDE to activate the plugin.
 
@@ -67,7 +67,7 @@ This guide walks you through everything you need to get set up. It should take a
 1. Go to the **Installed** tab in the Plugins section.
 2. Find **"Development Statistics"** in the list and make sure it is enabled.
 
-   ![Enable Plugin](./Images/EnablePlugin.png)
+   ![Plugin Enabled](./Images/PluginInstalled.png)
 
 3. Restart the IDE if prompted.
 
