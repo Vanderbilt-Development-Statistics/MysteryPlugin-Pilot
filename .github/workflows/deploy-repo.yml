@@ -12,6 +12,7 @@ on:
     branches: [main]
     paths:
       - 'updatePlugins.xml'
+      - 'scripts/**'
 
   # Allow manual trigger
   workflow_dispatch:
@@ -43,6 +44,7 @@ jobs:
         run: |
           mkdir -p _site
           cp updatePlugins.xml _site/
+          touch _site/.nojekyll
 
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
