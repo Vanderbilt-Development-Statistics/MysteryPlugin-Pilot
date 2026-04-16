@@ -11,15 +11,18 @@ This guide walks you through everything you need to get set up. It should take a
 ## Prerequisites
 
 - A computer running **Windows**, **macOS**, or **Linux**
+- **IntelliJ IDEA 2023.3 or newer** (Community or Ultimate)
 - An internet connection
 - A screen recording tool (see [Step 6](#step-6-start-screen-recording))
+
+> **Important:** The plugin requires **IntelliJ IDEA 2023.3 or newer**. If you already have an older version installed, please update it before continuing. The latest release from JetBrains will always work.
 
 ---
 
 ## Step 1: Download IntelliJ IDEA
 
 1. Go to the [IntelliJ IDEA download page](https://www.jetbrains.com/idea/download/).
-2. Download the installer for your operating system.
+2. Download the installer for your operating system. **Make sure it is version 2023.3 or newer** — any current version on the JetBrains download page will work.
 
    ![IntelliJ Download](./Images/IntelliJDownload.png)
 
@@ -27,6 +30,7 @@ This guide walks you through everything you need to get set up. It should take a
 4. Launch IntelliJ IDEA. You should see the welcome screen:
 
    ![Welcome Page](./Images/WelcomePage.png)
+5. **Verify your version:** On the welcome screen, the version number is shown in the bottom-right corner (e.g., "2024.3"). On macOS, you can also check via **IntelliJ IDEA > About IntelliJ IDEA**; on Windows/Linux, via **Help > About**. Confirm it is **2023.3 or newer** before continuing.
 
 ---
 
@@ -112,7 +116,8 @@ When you've finished the assignment, stop your screen recording and upload the v
 
 | Issue | Solution |
 |-------|----------|
-| Plugin doesn't appear in Marketplace | Make sure you added the repository URL in Step 2, then close and reopen the Plugins window. |
+| Plugin doesn't appear in Marketplace | Make sure you added the repository URL in Step 2, then close and reopen the Plugins window. Also confirm your IDE version is **2023.3 or newer** — older versions will not show the plugin. |
+| "Plugin is incompatible" or "not compatible with this version of IntelliJ IDEA" | Your IDE is older than 2023.3. Update IntelliJ IDEA via **Help > Check for Updates**, or download the latest version from [the JetBrains website](https://www.jetbrains.com/idea/download/). |
 | "Connection failed" when adding the repository | Check your internet connection and try again. If you're on a VPN, try disconnecting first. |
 | Plugin installed but not working | Go to **Plugins > Installed**, confirm "Development Statistics" is enabled, and restart the IDE. |
 | IntelliJ won't open the project | Make sure you unzipped the download first — don't try to open the `.zip` file directly. |
