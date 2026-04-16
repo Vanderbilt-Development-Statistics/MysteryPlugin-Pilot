@@ -2,8 +2,8 @@
 <plugins>
     <plugin
         id="devstatsplugin"
-        url="https://github.com/Vanderbilt-Development-Statistics/MysteryPlugin-Pilot/releases/download/v1.0.0/dev-stats-plugin-1.0.0.zip"
-        version="1.0.0">
+        url="https://github.com/Vanderbilt-Development-Statistics/MysteryPlugin-Pilot/releases/download/v1.0.1/dev-stats-plugin-1.0.1.zip"
+        version="1.0.1">
         <idea-version since-build="233"/>
         <name>Development Statistics</name>
         <description><![CDATA[
