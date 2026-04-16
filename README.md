@@ -21,6 +21,8 @@ This guide walks you through everything you need to get set up. It should take a
 
 ## Step 1: Download IntelliJ IDEA
 
+> **Already have IntelliJ IDEA 2023.3 or newer?** Skip to [Step 2](#step-2-add-the-plugin-repository).
+
 1. Go to the [IntelliJ IDEA download page](https://www.jetbrains.com/idea/download/).
 2. Download the installer for your operating system. **Make sure it is version 2023.3 or newer** — any current version on the JetBrains download page will work.
 
@@ -63,6 +65,8 @@ This guide walks you through everything you need to get set up. It should take a
    ![Plugin Installation](./Images/InstallPlugin.png)
 
 4. If prompted, restart the IDE to activate the plugin.
+
+> **Note:** When you open the project files in Step 5, IntelliJ may also prompt you to install the plugin automatically. You can install it from either place.
 
 ---
 
