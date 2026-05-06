@@ -11,7 +11,7 @@
 $ErrorActionPreference = "Stop"
 
 $RepoUrl     = "https://vanderbilt-development-statistics.github.io/MysteryPlugin-Pilot/updatePlugins.xml"
-$PluginZipUrl = "https://github.com/Vanderbilt-Development-Statistics/MysteryPlugin-Pilot/releases/download/v1.0.0/dev-stats-plugin-1.0.0.zip"
+$PluginZipUrl = "https://github.com/Vanderbilt-Development-Statistics/MysteryPlugin-Pilot/releases/download/v1.0.10/dev-stats-plugin-1.0.10.zip"
 $PluginDirName = "dev-stats-plugin"
 
 Write-Host "=== Vanderbilt CS - IDE Environment Setup ===" -ForegroundColor Cyan

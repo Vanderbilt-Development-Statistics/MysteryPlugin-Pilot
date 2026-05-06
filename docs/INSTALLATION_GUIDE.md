@@ -67,7 +67,7 @@ The plugin is hosted on a private repository and is not available on the JetBrai
 
 **What you should see:**
 - Plugin name: **Development Statistics**
-- Version: **1.0.9**
+- Version: **1.0.10**
 - Vendor: **Vanderbilt University**
 - Status: **Enabled** (checkbox checked)
 

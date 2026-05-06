@@ -1,6 +1,6 @@
 # Distribution Verification Report
 
-Full verification of the plugin distribution pipeline. Last updated April 17, 2026.
+Full verification of the plugin distribution pipeline. Last updated May 4, 2026.
 
 ---
 
@@ -11,9 +11,9 @@ Full verification of the plugin distribution pipeline. Last updated April 17, 20
 | Check | Result |
 |-------|--------|
 | `id` matches plugin.xml | `devstatsplugin` — matches |
-| `version` matches plugin source | `1.0.9` — matches `gradle.properties` |
+| `version` matches plugin source | `1.0.10` — matches `gradle.properties` |
 | `since-build` matches plugin.xml | `233` — matches |
-| `url` points to release asset | `https://github.com/Vanderbilt-Development-Statistics/MysteryPlugin-Pilot/releases/download/v1.0.9/dev-stats-plugin-1.0.9.zip` |
+| `url` points to release asset | `https://github.com/Vanderbilt-Development-Statistics/MysteryPlugin-Pilot/releases/download/v1.0.10/dev-stats-plugin-1.0.10.zip` |
 | XML is well-formed | Valid XML, parses correctly |
 | GitHub Pages serves the file | Confirmed accessible at `https://vanderbilt-development-statistics.github.io/MysteryPlugin-Pilot/updatePlugins.xml` |
 
@@ -21,15 +21,15 @@ Full verification of the plugin distribution pipeline. Last updated April 17, 20
 
 | Check | Result |
 |-------|--------|
-| Release `v1.0.9` exists | Yes, published 2026-04-17 (Latest) |
-| Asset `dev-stats-plugin-1.0.9.zip` attached | Yes |
+| Release `v1.0.10` exists | Pending publication (Latest will be v1.0.10 once cut) |
+| Asset `dev-stats-plugin-1.0.10.zip` attached | Pending |
 | Download URL returns valid zip | HTTP 200 after 1 redirect (302 to `release-assets.githubusercontent.com`) |
 | IntelliJ follows the redirect | Yes — IntelliJ's HTTP client follows 302 redirects |
-| All prior releases preserved | v1.0.0 through v1.0.8 still available |
+| All prior releases preserved | v1.0.0 through v1.0.9 still available |
 
 ### 3. Plugin Zip Structure — PASS
 
-The output of `./gradlew clean buildPlugin` produces `build/distributions/dev-stats-plugin-1.0.9.zip` containing a top-level directory with `lib/` and the plugin JAR plus dependencies (OkHttp, JSON, Kotlin stdlib, annotations).
+The output of `./gradlew clean buildPlugin` produces `build/distributions/dev-stats-plugin-1.0.10.zip` containing a top-level directory with `lib/` and the plugin JAR plus dependencies (OkHttp, JSON, Kotlin stdlib, annotations).
 
 ### 4. plugin.xml Consistency — PASS
 
@@ -82,7 +82,7 @@ After installation, the plugin appears in **Settings > Plugins > Installed** as 
 |-------|-------------------|
 | Marketplace search result | **Development Statistics** by Vanderbilt University |
 | Plugin description | "Dev-Stats is a simple tool designed to track your development statistics" |
-| Installed plugins list | Development Statistics, v1.0.9 |
+| Installed plugins list | Development Statistics, v1.0.10 |
 
 Class names inside the JAR (e.g., `StudentDevelopmentListener`, `FlaskAPISender`) are not visible through the IDE UI. The hardcoded API endpoint is in `DevStatsConfig.properties` inside the JAR — unlikely to be discovered in practice.
 
@@ -90,6 +90,6 @@ Class names inside the JAR (e.g., `StudentDevelopmentListener`, `FlaskAPISender`
 
 ## Summary
 
-The distribution pipeline is **fully functional and verified** for v1.0.9. The `updatePlugins.xml` format is correct, the GitHub Release asset is properly structured, GitHub Pages is serving the XML, the download URL works, and the student project template includes `externalDependencies.xml` for auto-prompted plugin installation.
+The distribution pipeline is **staged for v1.0.10** pending publication of the GitHub Release. The `updatePlugins.xml` format is correct and points at v1.0.10, the local plugin ZIP is built and structurally valid, GitHub Pages will serve the new XML on push, and the student project template still includes `externalDependencies.xml` for auto-prompted plugin installation. Once the v1.0.10 Release is cut and the asset is uploaded, all checks will be fully green again.
 
 Students who add the custom repository URL and open the project will be prompted to install the plugin automatically. The installation guide documents the expected untrusted plugin warning and provides manual installation steps as a fallback.

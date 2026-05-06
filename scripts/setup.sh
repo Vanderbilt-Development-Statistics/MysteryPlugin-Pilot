@@ -13,7 +13,7 @@
 set -euo pipefail
 
 REPO_URL="https://vanderbilt-development-statistics.github.io/MysteryPlugin-Pilot/updatePlugins.xml"
-PLUGIN_ZIP_URL="https://github.com/Vanderbilt-Development-Statistics/MysteryPlugin-Pilot/releases/download/v1.0.9/dev-stats-plugin-1.0.9.zip"
+PLUGIN_ZIP_URL="https://github.com/Vanderbilt-Development-Statistics/MysteryPlugin-Pilot/releases/download/v1.0.10/dev-stats-plugin-1.0.10.zip"
 PLUGIN_DIR_NAME="dev-stats-plugin"
 
 echo "=== Vanderbilt CS — IDE Environment Setup ==="
