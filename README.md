@@ -7,6 +7,9 @@ Welcome! You've been invited to participate in a pilot study for **Development S
 This guide walks you through everything you need to get set up. It should take about **5 minutes**.
 
 ---
+## The purpose of the study
+
+This study aims to evaluate an IntelliJ plugin that tracks programming activity to help identify patterns associated with potential code plagiarism or unauthorized code sharing.
 
 ## Task
 
